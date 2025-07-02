@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lua de Mel em Buenos Aires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="heart">♥</span> Lua de Mel em Buenos Aires <span class="heart">♥</span></h1>
+            <p>23 a 30 de Novembro de 2025 • 8 dias de romance</p>
+        </div>
+        
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>✈️ Informações do Voo</h3>
+                <p><strong>Chegada:</strong> 23/11/2025 às 20h - Ezeiza</p>
+                <p><strong>Partida:</strong> 30/11/2025 às 21h - Ezeiza</p>
+                <p><strong>Tempo para o centro:</strong> 45-60min (Uber ~$25-35)</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>🏨 Localização</h3>
+                <p><strong>Hospedagem:</strong> Próxima à Casa Rosada</p>
+                <p><strong>Bairro:</strong> Microcentro/San Telmo</p>
+                <p><strong>Vantagens:</strong> Perto de tudo, fácil locomoção</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>🚗 Transporte</h3>
+                <p><strong>Uber:</strong> Rápido e seguro</p>
+                <p><strong>Subte:</strong> Linha A, C, D, E passam perto</p>
+                <p><strong>Táxi:</strong> Abundantes no centro</p>
+            </div>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('roteiro')">📅 Roteiro</button>
+            <button class="tab" onclick="showTab('gastronomia')">🍽️ Gastronomia</button>
+            <button class="tab" onclick="showTab('pontos-turísticos')">📍Pontos Turísticos</button>
+            <button class="tab" onclick="showTab('dicas')">💡 Dicas</button>
+        </div>
+        
+        <div id="roteiro" class="tab-content active">
+            <div class="day-card">
+                <div class="day-title">📅 Dia 1 - Domingo (23/11/2025) - Chegada e San Telmo</div>
+                <div class="activity">
+                    <h4>20h - Chegada em Ezeiza</h4>
+                    <p>• Pegar Uber direto para o hotel (~45-60min)</p>
+                    <p>• Check-in e descanso</p>
+                </div>
+                <div class="activity">
+                    <h4>22h - Jantar leve em San Telmo (com feira!)</h4>
+                    <p>• <strong>Feira de San Telmo:</strong> Aproveitar a atmosfera noturna da feira (se ainda estiver ativa)</p>
+                    <p>• Ou um restaurante charmoso em San Telmo</p>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">📅 Dia 2 - Segunda (24/11/2025) - Centro Histórico e Puerto Madero</div>
+                <div class="activity">
+                    <h4>9h - Café da manhã</h4>
+                    <p>• <strong>Malvón</strong> - brunch delicioso perto do hotel</p>
+                </div>
+                <div class="activity">
+                    <h4>10h30 - Plaza de Mayo e arredores</h4>
+                    <p>• Casa Rosada (vocês estão pertinho!)</p>
+                    <p>• Catedral Metropolitana</p>
+                    <p>• Cabildo</p>
+                </div>
+                <div class="activity">
+                    <h4>14h - Almoço romântico em Puerto Madero</h4>
+                    <p>• <strong>Cabaña Las Lilas</strong> - carne premium com vista do rio</p>
+                </div>
+                <div class="activity">
+                    <h4>16h - Puerto Madero</h4>
+                    <p>• Caminhada romântica pela Costanera Sur</p>
+                    <p>• Ponte da Mulher</p>
+                    <p>• Reserve Ecológica (se quiserem natureza)</p>
+                </div>
+                <div class="activity">
+                    <h4>20h - Jantar</h4>
+                    <p>• <strong>La Brigada</strong> - parrilla tradicional em San Telmo</p>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">📅 Dia 3 - Terça (25/11/2025) - Boca e Recoleta</div>
+                <div class="activity">
+                    <h4>9h - Café da manhã</h4>
+                    <p>• <strong>Jay's American Restaurant</strong> - estilo americano</p>
+                </div>
+                <div class="activity">
+                    <h4>11h - La Boca</h4>
+                    <p>• Caminito (imperdível!)</p>
+                    <p>• Estádio La Bombonera (externa)</p>
+                    <p>• Fotos no bairro mais colorido</p>
+                </div>
+                <div class="transport-tip">
+                    💡 <strong>Dica de transporte:</strong> Uber até La Boca (~15min do centro). Evitem andar muito além do Caminito.
+                </div>
+                <div class="activity">
+                    <h4>14h - Almoço</h4>
+                    <p>• <strong>Il Matterello</strong> - massas em La Boca</p>
+                </div>
+                <div class="activity">
+                    <h4>16h - Recoleta</h4>
+                    <p>• Cemitério da Recoleta (túmulo da Evita)</p>
+                    <p>• Museu Nacional de Belas Artes</p>
+                    <p>• Igreja do Pilar</p>
+                </div>
+                <div class="activity">
+                    <h4>20h - Jantar</h4>
+                    <p>• <strong>Don Julio</strong> - uma das melhores parrillas (reservar com antecedência!)</p>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">📅 Dia 4 - Quarta (26/11/2025) - Palermo e Show de Tango</div>
+                <div class="activity">
+                    <h4>9h - Café da manhã</h4>
+                    <p>• <strong>Ninina Bakery</strong> - doces deliciosos em Palermo</p>
+                </div>
+                <div class="activity">
+                    <h4>10h30 - Palermo Soho</h4>
+                    <p>• Compras e passeio pelas ruas charmosas</p>
+                    <p>• Plaza Serrano</p>
+                    <p>• Jardim Japonês ou Rosedal (se houver tempo e interesse)</p>
+                </div>
+                <div class="activity">
+                    <h4>14h - Almoço</h4>
+                    <p>• <strong>Alvear Palace Hotel</strong> - experiência luxuosa (ou um café charmoso em Palermo)</p>
+                </div>
+                <div class="activity">
+                    <h4>16h - Tempo livre / Compras adicionais</h4>
+                    <p>• Explorar mais Palermo ou retornar ao hotel para descanso</p>
+                </div>
+                <div class="activity">
+                    <h4>19h - Show de Tango</h4>
+                    <p>• <strong>Café Tortoni</strong> ou <strong>Señor Tango</strong></p>
+                    <p>• Jantar incluído no show</p>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">📅 Dia 5 - Quinta (27/11/2025) - Tigre (Bate e volta)</div>
+                <div class="activity">
+                    <h4>8h30 - Café da manhã rápido</h4>
+                    <p>• No hotel ou perto da estação</p>
+                </div>
+                <div class="activity">
+                    <h4>9h30 - Viagem para Tigre</h4>
+                    <p>• Trem desde Retiro (1h de viagem)</p>
+                    <p>• Experiência autêntica de transporte local</p>
+                </div>
+                <div class="activity">
+                    <h4>11h - Tigre</h4>
+                    <p>• Passeio de barco pelos canais</p>
+                    <p>• Mercado de Frutos</p>
+                    <p>• Museu de Arte Tigre</p>
+                </div>
+                <div class="activity">
+                    <h4>13h30 - Almoço</h4>
+                    <p>• <strong>Il Novo Maria del Lujan</strong> - à beira do rio</p>
+                </div>
+                <div class="activity">
+                    <h4>17h - Volta para Buenos Aires</h4>
+                    <p>• Trem de volta</p>
+                </div>
+                <div class="activity">
+                    <h4>19h30 - Jantar</h4>
+                    <p>• <strong>Tegui</strong> - fine dining (reservar com antecedência)</p>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">📅 Dia 6 - Sexta (28/11/2025) - Compras e Ícones da Cidade</div>
+                <div class="activity">
+                    <h4>10h - Café da manhã</h4>
+                    <p>• <strong>Café Martinez</strong> - rede local famosa</p>
+                </div>
+                <div class="activity">
+                    <h4>11h - Florida Street e Galerías Pacífico</h4>
+                    <p>• Compras na rua principal</p>
+                    <p>• Visitar o lindo shopping Galerías Pacífico</p>
+                </div>
+                <div class="activity">
+                    <h4>14h - Almoço e Livraria El Ateneo</h4>
+                    <p>• <strong>El Ateneo Grand Splendid</strong> - livraria + café (almoço leve ou lanche)</p>
+                </div>
+                <div class="activity">
+                    <h4>16h - Obelisco, Teatro Colón e Av. 9 de Julio</h4>
+                    <p>• Últimas fotos nos pontos icônicos do centro</p>
+                    <p>• Apreciar a arquitetura do Teatro Colón (externa)</p>
+                </div>
+                <div class="activity">
+                    <h4>20h - Jantar de despedida</h4>
+                    <p>• <strong>La Cabrera</strong> - última parrilla argentina memorável</p>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">📅 Dia 7 - Sábado (29/11/2025) - Outlet e Preparativos para Partida</div>
+                <div class="activity">
+                    <h4>10h - Café da manhã especial</h4>
+                    <p>• <strong>Confitería Las Violetas</strong> - centenária e linda para um café especial</p>
+                </div>
+                <div class="activity">
+                    <h4>11h - Outlet Distrito Arcos</h4>
+                    <p>• Para compras com desconto e últimas lembrancinhas</p>
+                    <p>• Uber até lá (~30min)</p>
+                </div>
+                <div class="activity">
+                    <h4>14h - Almoço no outlet ou retorno</h4>
+                    <p>• Praça de alimentação no local ou perto do hotel</p>
+                </div>
+                <div class="activity">
+                    <h4>17h - Volta ao hotel e arrumação das malas</h4>
+                    <p>• Tempo livre para organizar compras e preparar a saída</p>
+                </div>
+                <div class="activity">
+                    <h4>20h30 - Jantar romântico final</h4>
+                    <p>• <strong>Restaurante Santos Rooftop</strong> - vista panorâmica da cidade para o último jantar</p>
+                </div>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">📅 Dia 8 - Domingo (30/11/2025) - Partida</div>
+                <div class="activity">
+                    <h4>10h - Café da manhã</h4>
+                    <p>• No hotel ou em um café próximo</p>
+                </div>
+                <div class="activity">
+                    <h4>11h - Check-out do hotel</h4>
+                    <p>• Deixar as bagagens na recepção para aproveitar as últimas horas</p>
+                </div>
+                <div class="activity">
+                    <h4>12h - Última caminhada / Compras de última hora</h4>
+                    <p>• Revisitar um lugar favorito, comprar vinhos ou souvenirs finais</p>
+                    <p>• Almoço leve perto do hotel</p>
+                </div>
+                <div class="activity">
+                    <h4>17h - Saída para o aeroporto</h4>
+                    <p>• Pegar Uber para Ezeiza (considerar trânsito, tempo de viagem ~45-60min)</p>
+                    <p>• Chegar com antecedência para o voo internacional das 21h</p>
+                </div>
+            </div>
+        </div>
+        
+         <div id="gastronomia" class="tab-content">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #667eea;">🍽️ Guia Gastronômico Detalhado</h2>
+            
+            <h3 style="color: #667eea; margin-bottom: 20px;">☕ Cafés da Manhã (Desjejum)</h3>
+            <div class="restaurant-card">
+                <img src="https://imgmd.net/images/v1/guia/3320754/cafe-tortoni.jpg" alt="Foto do Café Tortoni" class="restaurant-image">
+                <h4>Café Tortoni</h4>
+                <span class="price-range">$$ - Moderado</span>
+                <p>O café mais famoso e antigo de Buenos Aires. Ideal para um café da manhã clássico com medialunas e chocolate quente em um ambiente histórico. Abre cedo.</p>
+                <p class="neighborhood">📍 Microcentro (Av. de Mayo 825)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p><a href="https://maps.google.com/?cid=5911962012960146477&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Ver no Google Maps</a></p>
+                    <p><a href="https://www.instagram.com/grancafetortoni/" target="_blank">Visitar Instagram</a></p>
+                </div>
+            </div>
+            
+            <div class="restaurant-card">
+                <img src="https://cdn.mos.cms.futurecdn.net/VaGZRrvWkfxT3g7igg7WEg.jpg" alt="Foto da Ninina Bakery" class="restaurant-image">
+                <h4>Ninina Bakery</h4>
+                <span class="price-range">$$ - Moderado</span>
+                <p>Doces, pães artesanais, ovos e opções saudáveis. Várias unidades, incluindo uma em Palermo e outra perto do centro. Perfeito para um brunch ou café da manhã completo.</p>
+                <p class="neighborhood">📍 Palermo / Recoleta (e outras)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p><a href="https://maps.google.com/?cid=1296458650938640758&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Ver no Google Maps</a></p>
+                    <p><a href="https://www.instagram.com/ninina.arg/" target="_blank">Visitar Instagram </a></p>
+                </div>
+            </div>
+            
+            <div class="restaurant-card">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/d3/74/26/20190314-174008-largejpg.jpg?w=1000&h=-1&s=1" class="restaurant-image">
+                <h4>Malvón</h4>
+                <span class="price-range">$$ - Moderado</span>
+                <p>Famoso por seus brunches e pães de fermentação natural. Ambiente aconchegante em San Telmo, ótimo para começar o dia.</p>
+                <p class="neighborhood">📍 San Telmo (Carlos Calvo 318)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p><a href="https://www.google.com/maps/place/Malvon/@-34.5943898,-58.4390779,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcca755b8b9d5f:0xf92560e7e058e708!8m2!3d-34.5943898!4d-58.4390779!16s%2Fg%2F1tc_s611?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Google Maps</a></p>
+                    <p><a href="https://www.instagram.com/malvonba/" target="_blank">Visitar Instagram </a></p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h4>La Mantequería Microcentro</h4>
+                <span class="price-range">$ - Econômico</span>
+                <p>Um café com ótimas avaliações para um café da manhã rápido e de qualidade no coração do Microcentro. Ótimas medialunas e café.</p>
+                <p class="neighborhood">📍 Microcentro (Carlos Pellegrini 655)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p>Links de localização e Instagram não disponíveis automaticamente.</p>
+                </div>
+            </div>
+            
+            <h3 style="color: #667eea; margin: 30px 0 20px;">🥩 Parrillas (Carnes Argentinas Imperdíveis)</h3>
+            <div class="restaurant-card">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/18126645633033811514" alt="Foto da Don Julio Parrilla" class="restaurant-image">
+                <h4>Don Julio Parrilla</h4>
+                <span class="price-range">$$$ - Caro</span>
+                <p>Considerada uma das melhores parrillas do mundo. Experiência autêntica e carnes de altíssima qualidade. **Reserve com muita antecedência!**</p>
+                <p class="neighborhood">📍 Palermo (Guatemala 4691)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p><a href="https://maps.google.com/?cid=6868543431240214617&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Ver no Google Maps</a></p>
+                    <p><a href="https://www.instagram.com/donjulioparrilla/" target="_blank">Visitar Instagram</a></p>
+                </div>
+            </div>
+            
+            <div class="restaurant-card">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/77622949794296110" alt="Foto da La Cabrera" class="restaurant-image">
+                <h4>La Cabrera</h4>
+                <span class="price-range">$$$ - Caro</span>
+                <p>Famosa pelos cortes generosos e acompanhamentos variados. Ambiente vibrante e carnes suculentas.</p>
+                <p class="neighborhood">📍 Palermo (José Antonio Cabrera 5099)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p><a href="https://maps.google.com/?cid=11565776114449552325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Ver no Google Maps</a></p>
+                    <p><a href="https://www.instagram.com/lacabrera_parrilla/" target="_blank">Visitar Instagram (Inferido)</a></p>
+                </div>
+            </div>
+            
+            <div class="restaurant-card">
+                <h4>La Brigada</h4>
+                <span class="price-range">$$ - Moderado</span>
+                <p>Parrilla tradicional com decoração temática de futebol (Boca Juniors). Conhecida por cortar a carne com uma colher, mostrando a maciez.</p>
+                <p class="neighborhood">📍 San Telmo (Estados Unidos 465)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p>Links de localização e Instagram não disponíveis automaticamente.</p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h4>Parrilla Peña</h4>
+                <span class="price-range">$$ - Moderado</span>
+                <p>Uma parrilla mais tradicional e menos turística, mas muito elogiada pelos locais. Ótimo custo-benefício e sabor autêntico.</p>
+                <p class="neighborhood">📍 Recoleta (Rodríguez Peña 682)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p>Links de localização e Instagram não disponíveis automaticamente.</p>
+                </div>
+            </div>
+            
+            <h3 style="color: #667eea; margin: 30px 0 20px;">❤️ Restaurantes Românticos e Fine Dining</h3>
+            <div class="restaurant-card">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/10255830515222394961" alt="Foto do Tegui" class="restaurant-image">
+                <h4>Tegui</h4>
+                <span class="price-range">$$$$ - Premium</span>
+                <p>Experiência de alta gastronomia com menu degustação e ambiente sofisticado. Ideal para uma noite especial de lua de mel. **Essencial reservar!**</p>
+                <p class="neighborhood">📍 Palermo (Costa Rica 5852)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p><a href="https://maps.google.com/?cid=11866421043726572104&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Ver no Google Maps</a></p>
+                    <p><a href="https://www.instagram.com/germanmartitegui/" target="_blank">Visitar Instagram (Chef)</a></p>
+                </div>
+            </div>
+            
+            <div class="restaurant-card">
+                <img src="http://googleusercontent.com/image_collection/image_retrieval/12267116965486824025" alt="Foto da Cabaña Las Lilas" class="restaurant-image">
+                <h4>Cabaña Las Lilas</h4>
+                <span class="price-range">$$$$ - Premium</span>
+                <p>Localizado em Puerto Madero, oferece carnes premium e uma vista espetacular do rio. Perfeito para um jantar elegante.</p>
+                <p class="neighborhood">📍 Puerto Madero (Alicia Moreau de Justo 516)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p><a href="https://maps.google.com/?cid=4997785835424196702&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank">Ver no Google Maps</a></p>
+                    <p><a href="https://www.instagram.com/cabanalaslilasrestaurante/" target="_blank">Visitar Instagram</a></p>
+                </div>
+            </div>
+            
+            <div class="restaurant-card">
+                <h4>Santos Rooftop</h4>
+                <span class="price-range">$$$ - Caro</span>
+                <p>Terraço com vista 360° da cidade, ideal para coquetéis e um jantar romântico ao pôr do sol. Ambiente moderno e descontraído.</p>
+                <p class="neighborhood">📍 Retiro (Marcelo T. de Alvear 623 - no topo do Hotel 725 Continental)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p>Links de localização e Instagram não disponíveis automaticamente.</p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <h4>Crizia Restaurante</h4>
+                <span class="price-range">$$$ - Caro</span>
+                <p>Culinária contemporânea com foco em frutos do mar e produtos frescos. Ambiente elegante e sofisticado em Palermo Soho.</p>
+                <p class="neighborhood">📍 Palermo (Fitz Roy 1819)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p>Links de localização e Instagram não disponíveis automaticamente.</p>
+                </div>
+            </div>
+            
+            <h3 style="color: #667eea; margin: 30px 0 20px;">🍰 Cafés Históricos e Confeitarias</h3>
+            <div class="restaurant-card">
+                <h4>Confitería Las Violetas</h4>
+                <span class="price-range">$$ - Moderado</span>
+                <p>Uma joia arquitetônica Art Nouveau. Perfeita para um café da tarde com doces, salgados e um ambiente que remete ao século passado.</p>
+                <p class="neighborhood">📍 Almagro (Av. Rivadavia 3899)</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p>Links de localização e Instagram não disponíveis automaticamente.</p>
+                </div>
+            </div>
+            
+            <div class="restaurant-card">
+                <h4>El Ateneo Grand Splendid</h4>
+                <span class="price-range">$ - Econômico</span>
+                <p>Antigo teatro transformado em livraria, com um café no palco. Ótimo para um lanche rápido e apreciar a arquitetura.</p>
+                <button class="toggle-info-btn">Ver Detalhes</button>
+                <div class="more-info">
+                    <p>Links de localização e Instagram não disponíveis automaticamente.</p>
+                </div>
+                <p class="neighborhood">📍 Recoleta (Av. Santa Fe 1860)</p>
+            </div>
+            
+            <div class="transport-tip">
+                💡 <strong>Dica Gastronômica:</strong> Sempre perguntem pela "entrada" (couvert artístico) nos restaurantes - podem recusar se não quiserem pagar extra! Nos restaurantes mais concorridos (Don Julio, Tegui), **reservar com antecedência é fundamental.**
+            </div>
+        </div>
+
+        <div id="pontos-turísticos" class="tab-content">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #667eea;">📍 Guia Turístico Detalhado</h2>
+  <div class="card-container">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Casa+Rosada" alt="Foto da Casa Rosada">
+      <h3>Casa Rosada</h3>
+      <p>Sede da presidência da Argentina, famosa por sua cor característica e pela varanda onde figuras históricas discursaram. Fica na Plaza de Mayo.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Caminito" alt="Foto do Caminito">
+      <h3>Caminito</h3>
+      <p>Uma rua-museu colorida no bairro de La Boca, com conventillos (cortiços) pintados, artistas de rua e dançarinos de tango. É um dos cartões-postais da cidade.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Teatro+Colón" alt="Foto do Teatro Colón">
+      <h3>Teatro Colón</h3>
+      <p>Considerado um dos melhores teatros de ópera do mundo, impressiona pela sua arquitetura e acústica. Vale a pena fazer uma visita guiada ou assistir a um espetáculo.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200.png?text=Obelisco" alt="Foto do Obelisco">
+      <h3>Obelisco</h3>
+      <p>O monumento histórico mais icônico de Buenos Aires, localizado na intersecção das avenidas 9 de Julio e Corrientes.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Cemitério+da+Recoleta" alt="Foto do Cemitério da Recoleta">
+        <h3>Cemitério da Recoleta</h3>
+        <p>Famoso por seus impressionantes mausoléus e por ser o local de descanso de muitas personalidades argentinas, incluindo Eva Perón.</p>
+    </div>
+
+  </div>
+</div>
+        
+        <div id="dicas" class="tab-content">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #667eea;">💡 Dicas Essenciais</h2>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h4>💰 Dinheiro e Pagamentos</h4>
+                    <p>• Levem dólares e troquem no "cambio" (casa de câmbio)</p>
+                    <p>• Cotação paralela é muito melhor que oficial</p>
+                    <p>• Cartão aceito na maioria dos lugares</p>
+                    <p>• Sempre tenham trocado para táxi/Uber</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>🚗 Transporte</h4>
+                    <p>• Uber é seguro e prático</p>
+                    <p>• Subte (metrô) até 23h nos dias úteis</p>
+                    <p>• Táxis abundantes, peçam para ligar o taxímetro</p>
+                    <p>• Evitem andar sozinhos muito tarde</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>🌤️ Clima (Novembro)</h4>
+                    <p>• Primavera - temperaturas amenas</p>
+                    <p>• Máx: 22-25°C / Mín: 12-15°C</p>
+                    <p>• Pode chover - levem guarda-chuva</p>
+                    <p>• Roupas em camadas são ideais</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>🛍️ Compras</h4>
+                    <p>• Florida Street - rua comercial principal</p>
+                    <p>• Galerías Pacífico - shopping elegante</p>
+                    <p>• Palermo Soho - boutiques locais</p>
+                    <p>• Domingo: Feira de San Telmo</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>🍷 Vinhos</h4>
+                    <p>• Malbec é o rei!</p>
+                    <p>• Aldo's Vinoteca para comprar</p>
+                    <p>• Restaurantes têm ótimas cartas</p>
+                    <p>• Preços muito bons comparado ao Brasil</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>📱 Conectividade</h4>
+                    <p>• WiFi grátis na maioria dos lugares</p>
+                    <p>• Chip local ou roaming internacional</p>
+                    <p>• Apps úteis: Uber, Google Translate</p>
+                    <p>• Baixem mapas offline do Google Maps</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>🕺 Tango</h4>
+                    <p>• Shows turísticos: Café Tortoni, Señor Tango</p>
+                    <p>• Milongas autênticas: El Querandí</p>
+                    <p>• Aulas para iniciantes disponíveis</p>
+                    <p>• Experiência imperdível para casais!</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>⚠️ Segurança</h4>
+                    <p>• Buenos Aires é relativamente segura</p>
+                    <p>• Cuidado com celular na rua</p>
+                    <p>• Evitem ostentação excessiva</p>
+                    <p>• Microcentro vazio à noite - prefiram Uber</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>🗣️ Idioma</h4>
+                    <p>• Espanhol portenho tem sotaque único</p>
+                    <p>• "Che" é cumprimento comum</p>
+                    <p>• Português é entendido por muitos</p>
+                    <p>• Google Translate ajuda muito!</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>⏰ Horários Locais</h4>
+                    <p>• Almoço: 12h-15h</p>
+                    <p>• Jantar: 20h-24h (ou mais tarde!)</p>
+                    <p>• Lojas: 10h-20h (seg-sáb)</p>
+                    <p>• Domingos: muitas lojas fechadas</p>
+                </div>
+                
+                <div class="tip-card">
+                    <h4>🎭 Cultura</h4>
+                    <p>• Portenhos são orgulhosos da cidade</p>
+                    <p>• Falar sobre futebol sempre funciona</p>
+                    <p>• Evitem comparar com São Paulo/RJ</p>
+                    <p>• Buenos Aires = "Paris da América do Sul"</p>
+                </div>
+            </div>
+            
+            <div class="transport-tip">
+                ❤️ <strong>Dica Especial Lua de Mel:</strong> Reservem os restaurantes mais famosos com antecedência! Don Julio, Tegui e Cabaña Las Lilas enchem rapidamente. Peçam mesa romântica quando reservarem.
+            </div>
+            
+            <div class="transport-tip">
+                🚨 <strong>Emergências:</strong> Polícia 101 • Bombeiros 100 • SAME (ambulância) 107 • Defesa Civil 103
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

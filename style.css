@@ -1,0 +1,318 @@
+/* Reset básico para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente de fundo */
+    min-height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
+    color: #333; /* Cor padrão do texto */
+}
+
+/* Contêiner principal para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o contêiner */
+    padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+.header {
+    text-align: center;
+    color: white; /* Texto branco no cabeçalho */
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra no texto do título */
+}
+
+.header p {
+    font-size: 1.2em;
+    opacity: 0.9; /* Leve transparência para o subtítulo */
+}
+
+/* Coração decorativo no título */
+.heart {
+    color: #ff69b4; /* Cor rosa vibrante para o coração */
+    font-size: 1.2em;
+    vertical-align: middle; /* Alinha o coração verticalmente com o texto */
+}
+
+/* Layout dos cartões de informação gerais */
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Layout responsivo em grade */
+    gap: 20px; /* Espaçamento entre os cartões */
+    margin-bottom: 30px;
+}
+
+/* Estilo individual para os cartões de informação */
+.info-card {
+    background: rgba(255,255,255,0.95); /* Fundo branco semi-transparente */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1); /* Sombra sutil */
+    backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para o hover */
+}
+
+.info-card h3 {
+    color: #667eea; /* Cor do título do cartão */
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+/* Efeito de hover para todos os cartões principais */
+.info-card:hover,
+.day-card:hover,
+.restaurant-card:hover,
+.tip-card:hover {
+    transform: translateY(-5px); /* Levanta o cartão ligeiramente */
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada no hover */
+}
+
+/* Estilo para a barra de abas */
+.tabs {
+    display: flex;
+    justify-content: center; /* Centraliza os botões das abas */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo para os botões individuais de cada aba */
+.tab {
+    flex: 1; /* Permite que os botões se expandam igualmente */
+    padding: 12px 25px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4); /* Fundo semi-transparente */
+    border: none;
+    color: white; /* Texto branco */
+    cursor: pointer;
+    border-radius: 8px 8px 0 0; /* Apenas topo arredondado */
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra para destacá-los como botões */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+}
+
+.tab:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Fundo mais opaco no hover */
+    color: #667eea; /* Cor do texto ao passar o mouse */
+}
+
+.tab.active {
+    background-color: white; /* Fundo sólido para a aba ativa */
+    color: #667eea; /* Cor principal para o texto ativo */
+    border-bottom: 3px solid #667eea; /* Destaque na aba ativa */
+    transform: translateY(-2px); /* Pequeno levantamento visual */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Sombra mais forte no ativo */
+}
+
+/* Estilo para o conteúdo de cada aba */
+.tab-content {
+    display: none; /* Esconde o conteúdo por padrão */
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.tab-content.active {
+    display: block; /* Exibe o conteúdo da aba ativa */
+}
+
+/* Estilo para os cartões de dia do roteiro */
+.day-card {
+    background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); /* Gradiente rosa/vermelho */
+    color: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para o hover */
+}
+
+.day-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Sombra no título do dia */
+}
+
+/* Estilo para as atividades dentro dos cartões de dia */
+.activity {
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.activity h4 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+/* Estilo para os cartões de restaurante */
+.restaurant-card {
+    background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%); /* Gradiente azul */
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para o hover */
+}
+
+.restaurant-card h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para as imagens dos restaurantes */
+.restaurant-image {
+    width: 100%; /* Garante que a imagem ocupe 100% da largura do pai */
+    height: 200px; /* Altura fixa para uniformizar todas as imagens */
+    object-fit: cover; /* Corta a imagem para preencher o espaço sem distorcer */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+/* Faixa de preço do restaurante */
+.price-range {
+    display: inline-block;
+    background: rgba(255,255,255,0.3);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Bairro do restaurante */
+.neighborhood {
+    color: rgba(255,255,255,0.9);
+    font-style: italic;
+}
+
+/* Estilo para o botão "Ver Detalhes" dos restaurantes */
+.toggle-info-btn {
+    background-color: #667eea; /* Cor principal dos botões de ação */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-info-btn:hover {
+    background-color: #5a67d8; /* Cor mais escura no hover */
+}
+
+/* Estilo para o conteúdo que será expandido/ocultado dentro dos cards de restaurante */
+.restaurant-card .more-info {
+    max-height: 0; /* Começa oculto */
+    overflow: hidden; /* Esconde o conteúdo que transborda */
+    transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out, padding 0.6s ease-in-out; /* Transição suave */
+    padding-top: 0; /* Começa sem padding superior */
+    margin-top: 0; /* Começa sem margem superior */
+    opacity: 0; /* Começa invisível */
+    visibility: hidden; /* Garante que elementos dentro não sejam acessíveis quando ocultos */
+    pointer-events: none; /* Impede cliques quando oculto */
+    border-top: none; /* Começa sem a borda divisória */
+}
+
+/* Estilo quando o conteúdo do restaurante está expandido */
+.restaurant-card .more-info.show-details { /* Nova classe 'show-details' usada pelo JS */
+    max-height: 500px; /* Altura máxima que o conteúdo pode atingir ao expandir */
+    padding-top: 15px; /* Adiciona padding quando expandido */
+    margin-top: 15px; /* Adiciona margin quando expandido */
+    opacity: 1; /* Torna visível */
+    visibility: visible;
+    pointer-events: auto; /* Permite cliques quando visível */
+    border-top: 1px dashed rgba(255, 255, 255, 0.5); /* Borda divisória sutil */
+}
+
+/* Estilo para os links dentro do 'more-info' */
+.more-info p {
+    margin-bottom: 5px;
+}
+
+.more-info a {
+    color: #667eea; /* Cor principal para os links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.more-info a:hover {
+    text-decoration: underline; /* Sublinha no hover */
+}
+
+/* Dica de transporte (geral e gastronômica) */
+.transport-tip {
+    background: rgba(255,255,255,0.1);
+    border-left: 4px solid #ffd700; /* Borda amarela para destaque */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    color: gray; /* Texto cinza */
+}
+
+/* Layout da grade de dicas */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo para os cartões de dicas individuais */
+.tip-card {
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para o hover */
+}
+
+.tip-card h4 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+/* Media Queries para Responsividade (ajustes para telas menores) */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column; /* Abas em coluna em telas menores */
+        gap: 5px;
+    }
+    
+    .header h1 {
+        font-size: 2em; /* Tamanho da fonte do título ajustado */
+    }
+    
+    .container {
+        padding: 15px; /* Padding menor no contêiner */
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr; /* Coluna única para cartões de informação */
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr; /* Coluna única para grade de dicas */
+    }
+}
