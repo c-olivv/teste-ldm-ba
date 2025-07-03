@@ -40,9 +40,14 @@ body {
 }
 
 .header p {
-    font-size: 1.2em;
-    opacity: 0.9; /* Leve transparência para o subtítulo */
-    color: #4682B4; /* Um azul um pouco mais suave para o subtítulo */
+    font-size: 1.8em;
+    color: #1E90FF; /* Um azul um pouco mais suave para o subtítulo */
+    text-shadow: 
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white,
+        2px 2px 4px rgba(0,0,0,0.2);
 }
 
 /* Coração decorativo no título */
