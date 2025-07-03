@@ -9,7 +9,7 @@
 body {
     font-family: 'Arial', sans-serif;
     /* Gradiente em tons de azul celeste e branco, inspirado na Argentina */
-    background: linear-gradient(135deg, #87CEEB 0%, #E0FFFF 100%); 
+    background: linear-gradient(135deg, #6495ED 0%, #ADD8E6 100%); 
     min-height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
     color: #333; /* Cor padrão do texto */
 }
