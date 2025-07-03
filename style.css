@@ -1,4 +1,4 @@
-/* Reset básico para todos os elementos */
+ Reset básico para todos os elementos */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +8,8 @@
 /* Estilos globais do corpo da página */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Gradiente de fundo */
+    /* Gradiente em tons de azul celeste e branco, inspirado na Argentina */
+    background: linear-gradient(135deg, #87CEEB 0%, #E0FFFF 100%); 
     min-height: 100vh; /* Garante que o fundo ocupe toda a altura da tela */
     color: #333; /* Cor padrão do texto */
 }
@@ -23,24 +24,25 @@ body {
 /* Estilos do cabeçalho */
 .header {
     text-align: center;
-    color: white; /* Texto branco no cabeçalho */
+    color: #1E90FF; /* Azul mais escuro para o título principal */
     margin-bottom: 30px;
 }
 
 .header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* Sombra no texto do título */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Sombra sutil no texto */
 }
 
 .header p {
     font-size: 1.2em;
     opacity: 0.9; /* Leve transparência para o subtítulo */
+    color: #4682B4; /* Um azul um pouco mais suave para o subtítulo */
 }
 
 /* Coração decorativo no título */
 .heart {
-    color: #ff69b4; /* Cor rosa vibrante para o coração */
+    color: #FFD700; /* Amarelo dourado, remetendo ao sol */
     font-size: 1.2em;
     vertical-align: middle; /* Alinha o coração verticalmente com o texto */
 }
@@ -64,7 +66,7 @@ body {
 }
 
 .info-card h3 {
-    color: #667eea; /* Cor do título do cartão */
+    color: #1E90FF; /* Azul escuro para o título do cartão */
     margin-bottom: 15px;
     font-size: 1.3em;
 }
@@ -93,9 +95,9 @@ body {
     flex: 1; /* Permite que os botões se expandam igualmente */
     padding: 12px 25px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.4); /* Fundo semi-transparente */
+    background-color: rgba(255, 255, 255, 0.6); /* Fundo branco semi-transparente */
     border: none;
-    color: white; /* Texto branco */
+    color: #4682B4; /* Azul mais suave para o texto */
     cursor: pointer;
     border-radius: 8px 8px 0 0; /* Apenas topo arredondado */
     font-size: 1.1em;
@@ -106,14 +108,14 @@ body {
 }
 
 .tab:hover {
-    background-color: rgba(255, 255, 255, 0.6); /* Fundo mais opaco no hover */
-    color: #667eea; /* Cor do texto ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo mais opaco no hover */
+    color: #1E90FF; /* Azul mais escuro no hover */
 }
 
 .tab.active {
     background-color: white; /* Fundo sólido para a aba ativa */
-    color: #667eea; /* Cor principal para o texto ativo */
-    border-bottom: 3px solid #667eea; /* Destaque na aba ativa */
+    color: #1E90FF; /* Azul escuro para o texto ativo */
+    border-bottom: 3px solid #1E90FF; /* Destaque na aba ativa com azul escuro */
     transform: translateY(-2px); /* Pequeno levantamento visual */
     box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Sombra mais forte no ativo */
 }
@@ -134,8 +136,9 @@ body {
 
 /* Estilo para os cartões de dia do roteiro */
 .day-card {
-    background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); /* Gradiente rosa/vermelho */
-    color: white;
+    /* Gradiente de azul celeste */
+    background: linear-gradient(45deg, #ADD8E6 0%, #87CEEB 100%); 
+    color: #333; /* Cor do texto mais escura para contraste */
     border-radius: 15px;
     padding: 25px;
     margin-bottom: 20px;
@@ -146,26 +149,30 @@ body {
 .day-title {
     font-size: 1.5em;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Sombra no título do dia */
+    color: #1E90FF; /* Azul escuro para o título do dia */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Sombra sutil */
 }
 
 /* Estilo para as atividades dentro dos cartões de dia */
 .activity {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.4); /* Fundo branco mais transparente */
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 15px;
     backdrop-filter: blur(5px);
+    color: #333; /* Texto mais escuro para melhor leitura no fundo claro */
 }
 
 .activity h4 {
     font-size: 1.2em;
     margin-bottom: 8px;
+    color: #1E90FF; /* Azul escuro para os títulos das atividades */
 }
 
 /* Estilo para os cartões de restaurante */
 .restaurant-card {
-    background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%); /* Gradiente azul */
+    /* Gradiente em tons de azul diferente para variação */
+    background: linear-gradient(45deg, #6495ED 0%, #4682B4 100%); 
     color: white;
     border-radius: 15px;
     padding: 20px;
@@ -207,7 +214,7 @@ body {
 
 /* Estilo para o botão "Ver Detalhes" dos restaurantes */
 .toggle-info-btn {
-    background-color: #667eea; /* Cor principal dos botões de ação */
+    background-color: #1E90FF; /* Azul escuro para os botões de ação */
     color: white;
     border: none;
     padding: 8px 15px;
@@ -219,7 +226,7 @@ body {
 }
 
 .toggle-info-btn:hover {
-    background-color: #5a67d8; /* Cor mais escura no hover */
+    background-color: #008CBA; /* Um azul um pouco mais profundo no hover */
 }
 
 /* Estilo para o conteúdo que será expandido/ocultado dentro dos cards de restaurante */
@@ -236,7 +243,7 @@ body {
 }
 
 /* Estilo quando o conteúdo do restaurante está expandido */
-.restaurant-card .more-info.show-details { /* Nova classe 'show-details' usada pelo JS */
+.restaurant-card .more-info.show-details {
     max-height: 500px; /* Altura máxima que o conteúdo pode atingir ao expandir */
     padding-top: 15px; /* Adiciona padding quando expandido */
     margin-top: 15px; /* Adiciona margin quando expandido */
@@ -252,7 +259,7 @@ body {
 }
 
 .more-info a {
-    color: #667eea; /* Cor principal para os links */
+    color: #1E90FF; /* Azul escuro para os links */
     text-decoration: none;
     font-weight: bold;
 }
@@ -264,11 +271,11 @@ body {
 /* Dica de transporte (geral e gastronômica) */
 .transport-tip {
     background: rgba(255,255,255,0.1);
-    border-left: 4px solid #ffd700; /* Borda amarela para destaque */
+    border-left: 4px solid #FFA500; /* Laranja/âmbar para destaque, diferente do dourado do Sol */
     padding: 15px;
     margin: 20px 0;
     border-radius: 5px;
-    color: gray; /* Texto cinza */
+    color: #333; /* Texto escuro para melhor legibilidade no fundo claro */
 }
 
 /* Layout da grade de dicas */
@@ -288,7 +295,7 @@ body {
 }
 
 .tip-card h4 {
-    color: #667eea;
+    color: #1E90FF; /* Azul escuro para o título da dica */
     margin-bottom: 15px;
     font-size: 1.2em;
 }
