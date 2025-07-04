@@ -253,7 +253,7 @@ body {
 }
 
 /* Estilo quando o conteúdo do restaurante está expandido */
-.restaurant-card .more-info.show-details {
+.restaurant-card .more-info .show-details {
     max-height: 500px; /* Altura máxima que o conteúdo pode atingir ao expandir */
     padding-top: 15px; /* Adiciona padding quando expandido */
     margin-top: 15px; /* Adiciona margin quando expandido */
@@ -261,6 +261,30 @@ body {
     visibility: visible;
     pointer-events: auto; /* Permite cliques quando visível */
     border-top: 1px dashed rgba(255, 255, 255, 0.5); /* Borda divisória sutil */
+}
+
+.restaurant-card .social-links {
+    display: flex; /* Para alinhar os ícones lado a lado */
+    gap: 15px; /* Espaçamento entre os ícones */
+    margin-top: 10px; /* Espaçamento acima dos ícones */
+    justify-content: center; /* Centraliza os ícones */
+}
+
+.restaurant-card .social-icon {
+    width: 35px; /* Tamanho do ícone */
+    height: 35px; /* Altura do ícone */
+    border-radius: 50%; /* Deixa o ícone redondo (se for quadrado) */
+    padding: 5px; /* Um pequeno preenchimento interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente para o ícone */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para destacá-lo */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Transição para o hover */
+    object-fit: contain; /* Garante que a imagem inteira se ajuste dentro do contêiner */
+}
+
+.restaurant-card .social-icon:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente no hover */
+    background-color: white; /* Fundo sólido no hover */
+    cursor: pointer; /* Indica que é clicável */
 }
 
 /* Estilo para os links dentro do 'more-info' */
@@ -276,6 +300,17 @@ body {
 
 .more-info a:hover {
     text-decoration: underline; /* Sublinha no hover */
+}
+
+/* Estilo quando o conteúdo do restaurante está expandido */
+.restaurant-card .more-info.show-details {
+    max-height: 500px; /* Altura máxima que o conteúdo pode atingir ao expandir */
+    padding-top: 15px; /* Adiciona padding quando expandido */
+    margin-top: 15px; /* Adiciona margin quando expandido */
+    opacity: 1; /* Torna visível */
+    visibility: visible;
+    pointer-events: auto; /* Permite cliques quando visível */
+    border-top: 1px dashed rgba(255, 255, 255, 0.5); /* Borda divisória sutil */
 }
 
 /* Dica de transporte (geral e gastronômica) */
