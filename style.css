@@ -302,6 +302,17 @@ body {
     text-decoration: underline; /* Sublinha no hover */
 }
 
+/* Estilo quando o conteúdo do restaurante está expandido */
+.restaurant-card .more-info.show-details {
+    max-height: 500px; /* Altura máxima que o conteúdo pode atingir ao expandir */
+    padding-top: 15px; /* Adiciona padding quando expandido */
+    margin-top: 15px; /* Adiciona margin quando expandido */
+    opacity: 1; /* Torna visível */
+    visibility: visible;
+    pointer-events: auto; /* Permite cliques quando visível */
+    border-top: 1px dashed rgba(255, 255, 255, 0.5); /* Borda divisória sutil */
+}
+
 /* Dica de transporte (geral e gastronômica) */
 .transport-tip {
     background: rgba(255,255,255,0.1);
